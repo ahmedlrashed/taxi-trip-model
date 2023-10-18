@@ -1,5 +1,5 @@
 ![taxistand](figs/taxi_stand.jpg)
-#  Yellow Taxi Trip Prediction Model
+#  Taxi Fare Prediction Model
 This project's goal is to build a regression model that predicts taxi cab fares before each ride based on distance, time of day, and any additional variables we find necessary.
 </br></br>
 
