@@ -24,18 +24,18 @@ After looking at the dataset, the two variables that are most likely to help bui
 # 2 | Statistical Analysis
 The goal of this second notebook is to characterize and clean the 2017 Yellow Taxi Trip data set and to create a visualization to share to stakeholders.
 - We will use box plots to determine outliers and where the bulk of the data points reside in terms of trip_distance and total_amount.
-![totalbox](figs\total_boxplot.jpg)
-![tripbox](figs\trip_boxplot.jpg)
+![totalbox](figs/total_boxplot.jpg)
+![tripbox](figs/trip_boxplot.jpg)
 </br></br>
 - We will use histograms to visualize the trends and patters and outliers of critical variables, such as trip_distance and total_amount
-![totalhist](figs\totals_histogram.jpg)
-![triphist](figs\trip_histogram.jpg)
+![totalhist](figs/totals_histogram.jpg)
+![triphist](figs/trip_histogram.jpg)
 </br></br>
 - We will use bar charts to determine daily and monthly revenue and number of trips.
-![revday](figs\revenue_daily.jpg)
-![revmon](figs\revenue_monthly.jpg)
-![rideday](figs\rides_daily.jpg)
-![ridemon](figs\rides_monthly.jpg)
+![revday](figs/revenue_daily.jpg)
+![revmon](figs/revenue_monthly.jpg)
+![rideday](figs/rides_daily.jpg)
+![ridemon](figs/rides_monthly.jpg)
 </br></br>
 
 Google Slides EDA Presentation link [HERE](https://docs.google.com/presentation/d/1I3PJeAL6wSCZCT8FXa4GtsFjZeRMaZ67nGlbKEv-jzA/edit?usp=sharing).
