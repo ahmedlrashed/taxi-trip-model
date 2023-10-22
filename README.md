@@ -46,9 +46,11 @@ Under Construction. . .
 </br></br>
 
 ## Observations & Patterns
-- one.
+- A/B Test analysis shows that there is a statistically significant difference between the fare_amount for the credit card payment_type vs the cash payment_type. This suggests there might be more profitable for the taxi company to encourage payments by credit card.
 
-- two.
+- However, this assumes that passengers were forced to pay one way or the other, and that once informed of this requirement, they always complied with it. The data was not collected this way; so the   randomly grouped data entries to perform an A/B test was based on   an assumption that might necessarily be true.
+
+- This dataset does not account for other likely explanations. For example, riders might not carry lots of cash, so it's easier to pay for longer, long-distance trips with a credit card. In other words, it's far more likely that fare amount determines payment type, rather than vice versa.
 </br></br>
 
 # 4 | Conclusions
@@ -62,6 +64,7 @@ As expected, the model . . .
 * pandas = "^2.0"
 * matplotlib = "^3.8.0"
 * seaborn = "^0.13.0"
+* scipy = "^1.11.3"
 * scikit-learn = "^1.3.1"
 </br></br>
 
