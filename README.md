@@ -1,6 +1,7 @@
 ![taxistand](figs/taxi_stand.jpg)
 #  Taxi Fare Prediction Model
 This project's goal is to build a regression model that predicts taxi cab fares before each ride based on distance, time of day, and any additional variables we find necessary.
+### TLDR Presentation [LINK](https://docs.google.com/presentation/d/1I3PJeAL6wSCZCT8FXa4GtsFjZeRMaZ67nGlbKEv-jzA/edit?usp=sharing).
 </br></br>
 
 # Table of Contents
@@ -38,7 +39,7 @@ The goal of this second notebook is to characterize and clean the 2017 Yellow Ta
 ![ridemon](figs/rides_monthly.jpg)
 </br></br>
 
-Google Slides EDA Presentation link [HERE](https://docs.google.com/presentation/d/1I3PJeAL6wSCZCT8FXa4GtsFjZeRMaZ67nGlbKEv-jzA/edit?usp=sharing).
+### EDA Presentation [LINK](https://docs.google.com/presentation/d/1I3PJeAL6wSCZCT8FXa4GtsFjZeRMaZ67nGlbKEv-jzA/edit?usp=sharing).
 </br></br>
 
 # 3 | Building the Model
