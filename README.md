@@ -43,7 +43,31 @@ The goal of this second notebook is to characterize and clean the 2017 Yellow Ta
 </br></br>
 
 # 3 | Building the Model
-Under Construction. . .
+Many of the features will not be used to fit our model, so the most important columns to check for outliers are likely to be:
+
+- `trip_distance`
+- `fare_amount`
+- `duration`
+
+#### Create `mean_distance` column
+
+When deployed, the model will not know the duration of a trip until after the trip occurs, so we cannot train a model that uses this feature. However, we can use the statistics of trips we _do_ know to generalize about ones we do not know.
+
+In this step, we will create a column called `mean_distance` that captures the mean distance for each group of trips that share pickup and dropoff points. To calculate this, we will first create a helper column called `pickup_dropoff`, which contains the unique combination of pickup and dropoff location IDs for each row. Then we will replace each unique pickup_dropoff KEY with its mean_distance VALUE.
+
+#### Create `rush_hour` column
+
+Define rush hour as:
+* Any weekday (not Saturday or Sunday) AND
+* Either from 06:00&ndash;10:00 or from 16:00&ndash;20:00
+
+Create a binary `rush_hour` column that contains a 1 if the ride was during rush hour and a 0 if it was not.
+
+#### Pre-process the data
+Dummy encode categorical variables. Create training and testing sets. The test set should contain 20% of the total samples. 
+
+#### Build and evaluate model
+Instantiate our model and fit it to the training data. Evaluate our model performance by calculating the residual sum of squares and the explained variance score (R^2). Calculate the Mean Absolute Error, Mean Squared Error, and the Root Mean Squared Error.
 </br></br>
 
 ## Observations & Patterns
@@ -52,11 +76,13 @@ Under Construction. . .
 - However, this assumes that passengers were forced to pay one way or the other, and that once informed of this requirement, they always complied with it. The data was not collected this way; so the   randomly grouped data entries to perform an A/B test was based on   an assumption that might necessarily be true.
 
 - This dataset does not account for other likely explanations. For example, riders might not carry lots of cash, so it's easier to pay for longer, long-distance trips with a credit card. In other words, it's far more likely that fare amount determines payment type, rather than vice versa.
+
+- The model performance is high on both training and test sets, suggesting that there is little bias in the model and that the model is not overfit. In fact, the test scores were even better than the training scores. For the test data, an R2 of 0.868 means that 86.8% of the variance in the `fare_amount` variable is described by the model.
 </br></br>
 
 # 4 | Conclusions
 
-As expected, the model . . .
+As expected, the model shows a direct linear relationship between distance_traveled and fare_amount. For every 3.57 miles traveled, the fare increased by a mean of $7.13. Or, reduced: for every 1 mile traveled, the fare increased by a mean of $2.00.
 </br></br>
 
 # 5 | Dependencies
